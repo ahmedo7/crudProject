@@ -1,0 +1,74 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+<body>
+    
+
+
+   <div class="container  my-5">
+      <div class="group w-75 m-auto p-5">
+         
+      <h1 class="fw-bolder py-3">Product Management System </h1>
+      <input type="text" placeholder="Enter Product Name" id="productNameInput" class="form-control my-3">
+      
+      
+      <input type="number" placeholder="Enter Product Price" id="productPriceInput" class="form-control my-3">
+      
+      <input type="text" placeholder="Enter Product Category" id="productGategoryInput" class="form-control my-3">
+      
+      <textarea type="text" placeholder="Enter Product Description" id="productDescriptionInput" class="form-control my-3"></textarea>
+      
+      
+      <button onclick="addProduct();" class="btn btn-outline-info w-100" id="addBtn" >Add Product</button>
+      <button onclick="updateFormSystem();" class="btn btn-outline-warning w-100 d-none" id="updateBtn" >Update</button></div>
+      </div>
+        
+
+        <div class="w-50 p-4 mx-auto"> 
+         <input placeholder="search by name" oninput="searchProduct(this.value)" type="text" class="form-control" id="search">
+         
+         
+         </div>
+
+
+        
+  <div class="displayProduct py-5 mx-auto w-75">
+    <table class="table text-white">
+       <thead>
+          <th>index</th>
+          <th>name</th>
+          <th>price</th>
+          <th>gategory</th>
+          <th>desc</th>
+          <th>update</th>
+          <th>delete</th>
+    
+       </thead>
+       <tbody id="tableBody">
+         
+        
+       </tbody>
+    
+    </table>
+    
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
